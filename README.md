@@ -8,7 +8,7 @@
 >
 > Implement **group** client file transmission.
 
-##Coding Environment
+## Coding Environment
 
 1. Java 11
 2. Pravega 0.10.1
