@@ -15,7 +15,7 @@
 3. IntelliJ
 
 ## Client group chat
-###- Basic Architecture
+### - Basic Architecture
 
 In my group chat architecture, one stream serves as a message-exchange center for a chat room. Each client in a chat room will create their own Writer, ReaderGroup and Reader based on their client ID and connect to one stream based on chat room ID.
 
@@ -34,11 +34,11 @@ Client will be terminated when user type "Bye." in System.in.
 <img alt="ChatGroup.png" height="350" src="https://i.loli.net/2021/11/23/SHLKlvFV4tI3rPd.png" width="800"/>
 
 ## File transmission
-###- Basic Architecture
+### - Basic Architecture
 When a client makes a request for uploading a file, a new stream will be created based on the hashed result of uploaderID, receiverID and fileName. File data will be uploaded to that stream. When another client want to download that file, a mapping uploaderID, receiverID and file name need to be provided.
 ### One to one file transmission
 
-####- Upload file
+#### - Upload file
 - Running instructions
 
 1. run "GroupChat.java" as previous.
@@ -52,7 +52,7 @@ When a client makes a request for uploading a file, a new stream will be created
 
     <img alt="One2OneUpload.png" height="200" src="https://i.loli.net/2021/11/23/xOvu8RdGDQsTif7.png" width="350"/>
 
-####- Download file
+#### - Download file
 - Running instructions
 
 1. run "GroupChat.java" as previous.
@@ -68,14 +68,14 @@ When a client makes a request for uploading a file, a new stream will be created
 
 ### Group file transmission
 
-####Upload file
+#### Upload file
 - Running instructions
 1. almost the same as One-to-one transmission, but choose mode "Group file transfer"
    #### - Demo
 
     <img alt="GroupFileUpload.png" height="270" src="https://i.loli.net/2021/11/23/xnwOfYAzeFPZEBs.png" width="380"/>
 
-####Download file
+#### Download file
 
 - Running instructions
 1. always the same as One-to-one transmission, but choose mode "Group file transfer"
